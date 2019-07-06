@@ -43,13 +43,13 @@ function App() {
                   onChange={event => {
                     handleChange(event, element.id);
                   }}
-                  //   InputProps={
-                  //     element.mode === "readonly"
-                  //       ? {
-                  //           readOnly: true
-                  //         }
-                  //       : {}
-                  //   }
+                    InputProps={
+                      element.mode === "readonly"
+                        ? {
+                            readOnly: true
+                          }
+                        : {}
+                    }
                 />
               )}
               {element.type === "multiselect" && (
